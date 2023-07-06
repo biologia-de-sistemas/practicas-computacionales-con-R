@@ -1,0 +1,10 @@
+targets, factors
+ESE2, (!NFkB & !Snai2 & !ESE2) | (!NFkB & !Snai2 & ESE2) | (!NFkB & Snai2 & ESE2) | (NFkB & !Snai2 & !ESE2) | (NFkB & !Snai2 & ESE2)
+E2F, (!Rb & !p53 & !Snai2 & !Cyclin) | (!Rb & !p53 & !Snai2 & Cyclin)
+Cyclin, (!ESE2 & !E2F & !p16 & !NFkB & !Snai2) | (!ESE2 & !E2F & !p16 & NFkB & !Snai2) | (!ESE2 & !E2F & !p16 & NFkB & Snai2) | (!ESE2 & E2F & !p16 & !NFkB & !Snai2) | (!ESE2 & E2F & !p16 & NFkB & !Snai2) | (!ESE2 & E2F & !p16 & NFkB & Snai2) | (ESE2 & !E2F & !p16 & !NFkB & !Snai2) | (ESE2 & !E2F & !p16 & NFkB & !Snai2) | (ESE2 & E2F & !p16 & !NFkB & !Snai2) | (ESE2 & E2F & !p16 & NFkB & !Snai2)
+Snai2, (!ESE2 & !NFkB & !Snai2) | (!ESE2 & !NFkB & Snai2) | (!ESE2 & NFkB & !Snai2) | (!ESE2 & NFkB & Snai2) | (ESE2 & NFkB & Snai2)
+NFkB, !(!ESE2 & !p16 & !Snai2 & !NFkB)
+TELasa, (!Snai2 & !ESE2) | (Snai2 & !ESE2)
+Rb, (!Cyclin & !p16 & p53) | (!Cyclin & p16 & !p53) | (!Cyclin & p16 & p53) | (Cyclin & !p16 & p53) | (Cyclin & p16 & !p53) | (Cyclin & p16 & p53)
+p16, (!p16 & !E2F & p53 & !TELasa & !Snai2) | (!p16 & !E2F & p53 & !TELasa & Snai2) | (!p16 & !E2F & p53 & TELasa & !Snai2) | (!p16 & E2F & p53 & !TELasa & !Snai2) | (!p16 & E2F & p53 & !TELasa & Snai2) | (!p16 & E2F & p53 & TELasa & !Snai2) | (p16 & !E2F & !p53 & !TELasa & !Snai2) | (p16 & !E2F & p53 & !TELasa & !Snai2) | (p16 & !E2F & p53 & !TELasa & Snai2) | (p16 & !E2F & p53 & TELasa & !Snai2) | (p16 & E2F & !p53 & !TELasa & !Snai2) | (p16 & E2F & !p53 & !TELasa & Snai2) | (p16 & E2F & !p53 & TELasa & !Snai2) | (p16 & E2F & !p53 & TELasa & Snai2) | (p16 & E2F & p53 & !TELasa & !Snai2) | (p16 & E2F & p53 & !TELasa & Snai2) | (p16 & E2F & p53 & TELasa & !Snai2) | (p16 & E2F & p53 & TELasa & Snai2) | (p16 & !E2F & !p53 & TELasa & !Snai2)
+p53, (!p53 & !NFkB & !TELasa & !p16 & !Snai2) | (!p53 & !NFkB & !TELasa & p16 & !Snai2) | (!p53 & NFkB & !TELasa & p16 & !Snai2) | (p53 & !NFkB & !TELasa & !p16 & !Snai2) | (p53 & !NFkB & !TELasa & p16 & !Snai2) | (p53 & NFkB & !TELasa & p16 & !Snai2)
